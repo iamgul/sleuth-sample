@@ -1,0 +1,8 @@
+server:
+  port: 9191
+logging:
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} %-5level [%X{traceId}-%X{spanId}] %logger - %msg%n"
+spring:
+  sleuth:
+    traceId128: true
